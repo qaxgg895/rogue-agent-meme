@@ -243,8 +243,6 @@ def main():
     os.makedirs("/output", exist_ok=True)
     with open(OUTPUT_PATH, "wb") as f:
         f.write(data)
-    os.chmod("/output", 0o755)
-    os.chmod(OUTPUT_PATH, 0o644)
 
 
 if __name__ == "__main__":
